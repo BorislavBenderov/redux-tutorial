@@ -5,11 +5,13 @@ import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import userReducer from './feautures/user';
 import themeReducer from './feautures/theme';
+import cartReducer from './feautures/cart/cartSlice';
 
 const store = configureStore({
     reducer: {
         user: userReducer,
-        theme: themeReducer
+        theme: themeReducer,
+        cart: cartReducer
     }
 });
 
