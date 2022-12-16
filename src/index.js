@@ -6,12 +6,14 @@ import { Provider } from 'react-redux';
 import userReducer from './feautures/user';
 import themeReducer from './feautures/theme';
 import cartReducer from './feautures/cart/cartSlice';
+import modalReducer from './feautures/modal/modalSlice';
 
 const store = configureStore({
     reducer: {
         user: userReducer,
         theme: themeReducer,
-        cart: cartReducer
+        cart: cartReducer,
+        modal: modalReducer
     }
 });
 
